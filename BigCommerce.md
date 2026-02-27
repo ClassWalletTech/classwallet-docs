@@ -57,7 +57,7 @@ Click save and provide the credentials to ClassWallet
 
 **Script URL:** `https://store-{store_hash}.appsody.co/api/v1/js_lib.js`
 
-**Integrity Hash:**  (are we using same integrity hash or generating for each instance?)
+**Integrity Hash:**  Paste in the integrity hash provided by ClassWallet
 
 ### Step 3: Create the web page for ClassWallet to start the session.
 - Go to Storefront →  Web Pages, then click Create a Web Page.
