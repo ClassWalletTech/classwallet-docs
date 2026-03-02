@@ -62,6 +62,13 @@ _NOTE: Users with administrative roles will NOT be able to use their account for
 
 <img width="527" height="351" alt="image" src="https://github.com/user-attachments/assets/82447366-c7f1-46a3-84f8-4790adb87953" />
 
+**Order Status Flow**\
+Select to use the default WooCommerce order status flow OR use a custom order status flow. 
+- Default WooCommerce order status flow will set the initial order status as 'pending payment'. Once the ClassWallet order is approved, the order will be set to 'Processing' and the default `woocommerce_payment_complete` action will be fired.
+- Custom will allow you to select a desired order status for ClassWallet orders when the order is initially created, and optionally set a completed order status once the order is approved.\
+*Note: Using the Custom order status flow will not trigger the default `woocommerce_payment_complete` action when an order is approved. If you have any additional 3rd party functionality that hooks into this WooCommerce action, they will not be triggered.* 
+
+
 **Initial order status**\
 Select the status you would like when a new order is created. By default, the plugin will use the custom “CW Processing” status.\
 Choose the initial order status that best fits your workflow. “CW Processing” is a non standard WooCommerce order status, and therefore, will not trigger WooCommerce status email triggers. If you need your normal emails to trigger, you may want to choose an initial order status from
