@@ -1,5 +1,7 @@
 # Magento 2 ClassWallet Extension
 
+The Plugin can be found at: https://github.com/ClassWalletTech/classwallet-magento-plugin/releases
+
 ### Installation:
 Unzip into app/code. Run:
 ```
