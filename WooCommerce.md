@@ -60,7 +60,7 @@ Suppresses the coupon code input at checkout for ClassWallet customers.
 Choose the role ClassWallet customers will be assigned when they browse your site.\
 _NOTE: Users with administrative roles will NOT be able to use their account for extra security._
 
-<img width="527" height="351" alt="image" src="https://github.com/user-attachments/assets/82447366-c7f1-46a3-84f8-4790adb87953" />
+
 
 **Order Status Flow**\
 Select to use the default WooCommerce order status flow OR use a custom order status flow. 
@@ -68,13 +68,15 @@ Select to use the default WooCommerce order status flow OR use a custom order st
 - Custom will allow you to select a desired order status for ClassWallet orders when the order is initially created, and optionally set a completed order status once the order is approved.\
 *Note: Using the Custom order status flow will not trigger the default `woocommerce_payment_complete` action when an order is approved. If you have any additional 3rd party functionality that hooks into this WooCommerce action, they will not be triggered.* 
 
+| Custom | Default WooCommerce Flow |
+| :----: | :----: |
+| <img width="408" height="263" alt="image" src="https://github.com/user-attachments/assets/81a36073-24df-4bd6-8805-fe36f405999a" /> | <img width="496" height="197" alt="image" src="https://github.com/user-attachments/assets/919fe7af-5fff-46d2-82a4-ef441d18aa27" />|
 
-**Initial order status**\
-Select the status you would like when a new order is created. By default, the plugin will use the custom “CW Processing” status.\
-Choose the initial order status that best fits your workflow. “CW Processing” is a non standard WooCommerce order status, and therefore, will not trigger WooCommerce status email triggers. If you need your normal emails to trigger, you may want to choose an initial order status from
-the available WooCommerce order statuses in the dropdown.
+**Initial order status** *(if using custom)*  \
+Select the status you would like when a new order is created. By default, the custom flow will use the “Processing” status.\
+Choose the initial order status that best fits your workflow. “CW Processing” is a non standard WooCommerce order status, and therefore, will not trigger WooCommerce status email triggers. If you need your normal emails to trigger, you may want to choose an initial order status from the available WooCommerce order statuses in the dropdown.
 
-**Payment Complete Status**\
+**Payment Complete Status** *(if using custom)* \
 Set a custom status for completed ClassWallet orders, e.g. “ClassWallet Complete.” Leave
 blank to use the default “Processing” status.
 
