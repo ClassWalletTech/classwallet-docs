@@ -78,13 +78,13 @@ invoicing ClassWallet.\
 There are two enviroment variables that can be set to affect the way the plugin operates.
 * PUNCHOUT_HOST - default: app.classwallet.com
 * CALLBACK_HOST - default: StoreManagerInterface->getStore()->getBaseUrl()
-In most cases, you do not need to set these variables for the extension to work. However, you can
+In most cases, you do not need to set these variables for the extension to work because of the default values. However, you can
 override the defaults if need be. There are two ways to do so:
 1. Set the values in app/etc/env.php
    ```
     'classwallet' => [
-        'punchout_host' => 'test-punchout.host',
-        'callback_host' => 'test-callback.host'
+        'punchout_host' => 'app.classwallet.com',
+        'callback_host' => 'your-magento-site.com'
     ]
    ```
 2. Set server env vars PUNCHOUT_HOST and CALLBACK_HOST respectively.
