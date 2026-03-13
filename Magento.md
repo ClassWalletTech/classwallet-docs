@@ -74,8 +74,23 @@ invoicing ClassWallet.\
 <img width="276" height="102" alt="image" src="https://github.com/user-attachments/assets/6a8e77a4-e80b-4165-abcd-a82a21499c42" />
 
 
+### Environment Variables
+There are two enviroment variables that can be set to affect the way the plugin operates.
+* PUNCHOUT_HOST - default: app.classwallet.com
+* CALLBACK_HOST - default: StoreManagerInterface->getStore()->getBaseUrl()
+In most cases, you do not need to set these variables for the extension to work. However, you can
+override the defaults if need be. There are two ways to do so:
+1. Set the values in app/etc/env.php
+   ```
+    'classwallet' => [
+        'punchout_host' => 'test-punchout.host',
+        'callback_host' => 'test-callback.host'
+    ]
+   ```
+2. Set server env vars PUNCHOUT_HOST and CALLBACK_HOST respectively.
 
-
+NOTE: Setting server env vars PUNCHOUT_HOST and CALLBACK_HOST will override values set in app/etc/env.php
+You may choose the method that works best for your deployment setup.
 
 
 
