@@ -119,16 +119,3 @@ Data is encoding: ‘application/json’
 ```
 
 If everything is ok, respond with `{"status":"complete"}` or `{"status":"failed"}` if there was an issue.
-
-
-**Canceled:** 
-```
-{
-  "PurchaseOrderId": 123456789,
-  "status": "canceled"
-}
-```
-Delete the order and respond with `{"status":"canceled"}`
-
-
-
