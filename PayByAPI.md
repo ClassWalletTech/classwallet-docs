@@ -31,7 +31,7 @@ callback URL you provided. Extract the order ID from the request and create the
 response per the section Callback URL.
 
 **Step 3**
-- Respond to order callback from ClassWallet. Once the order has been approved, ClassWallet will send a PUT request to your Callback URL. Extract the
+- Respond to order callback from ClassWallet. Once the order has been approved, ClassWallet will send a PUT request to your Callback URL Extract the
 order ID from the URL and purchase order ID from the body of the request, update the order accordingly and record the
 purchase order ID in the order notes, or as the transaction ID if applicable.
 
