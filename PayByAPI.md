@@ -106,7 +106,7 @@ The callback URL can take any form you like as long as it includes an order Id. 
 }
 ```
 ### Completion 
-When an order is approved we send make the call:\
+When an order is approved we make the call:\
 **PUT** `https://yourstore.com/api/invoice_process/<order_id>`\
 Data is encoding: ‘application/json’
 
