@@ -118,4 +118,4 @@ Data is encoding: ‘application/json’
 }
 ```
 
-Respond with `{"status":"complete"}`.
+Respond with `{"status":"complete"}`
