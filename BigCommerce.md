@@ -71,7 +71,7 @@ Click save and provide the credentials to ClassWallet
 **Page Content**:
 ```
 <script type="text/javascript">
-const url\_params=new URLSearchParams(window.location.search);let cw\_decoded=atob(url\_params.get("cw\_data")),cw\_params=JSON.parse(cw\_decoded);sessionStorage.setItem("classwallet:vars:json:b64",btoa(JSON.stringify(cw\_params.cw\_data)));let login\_url=cw\_params.login\_url;window.location.href=login\_url;
+const url_params=new URLSearchParams(window.location.search);let cw_decoded=atob(url_params.get("cw_data")),cw_params=JSON.parse(cw_decoded);sessionStorage.setItem("classwallet:vars:json:b64",btoa(JSON.stringify(cw_params.cw_data)));let login_url=cw_params.login_url;window.location.href=login_url;
 </script>
 ```
 **Navigation Menu:** Un-check the box “Yes, show this web page on the navigation menu”. We do not want the page showing in the menu.
