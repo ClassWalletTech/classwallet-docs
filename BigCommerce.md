@@ -39,39 +39,4 @@
 
 Click save and provide the credentials to ClassWallet 
 
-### Step 2. Create the script for the storefront:
-- Go to Storefront → Script manager → Create script
-  - If using multi-storefront, Script Manager and other storefront-specific settings can be found within Channel Manager.
- 
-**Script name:** ClassWallet JS
-
-**Placement:** Footer
-
-**Location:** Checkout
-
-**Script category:** Functional
-
-**Script type:** URL
-
-**Load method:** Defer
-
-**Script URL:** `https://store-{store_hash}.appsody.co/api/v1/js_lib.js`
-
-**Integrity Hash:**  Paste in the integrity hash provided by ClassWallet
-
-### Step 3: Create the web page for ClassWallet to start the session.
-- Go to Storefront →  Web Pages, then click Create a Web Page.
-  - If using multi-storefront, Web Pages can be found within their respective storefront settings within Channel Manager
-- For _“This Page Will”_, select “Contain raw HTML entered in the text area below.”
-**Web Page Details:**\
-**Page Name:** Any name you choose. For clarity, choose something descriptive. Example: "ClassWallet Start Page"
-
-**Page URL:** `/start-classwallet`
-
-**Page Content**:
-```
-<script type="text/javascript">
-const url_params=new URLSearchParams(window.location.search);let cw_decoded=atob(url_params.get("cw_data")),cw_params=JSON.parse(cw_decoded);sessionStorage.setItem("classwallet:vars:json:b64",btoa(JSON.stringify(cw_params.cw_data)));let login_url=cw_params.login_url;window.location.href=login_url;
-</script>
-```
 **Navigation Menu:** Un-check the box “Yes, show this web page on the navigation menu”. We do not want the page showing in the menu.
