@@ -13,7 +13,7 @@
 |Checkout Content| Modify|
 |Customers|Modify|
 |Customers Login|Token Login|
-|Information & Settings|None|
+|Information & Settings|Read-only|
 |Marketing|None|
 |Orders|Modify|
 |Order Transactions|Modify|
@@ -32,7 +32,7 @@
 |Store Logs|None|
 |Store Locations|None|
 |Store Inventory|Read-only|
-|Fulfillment Methods|None|
+|Fulfillment Methods|Read-only|
 |Order Fulfillment|None|
 |Metafields Ownership|Manage|
 |Metafields Access|Full|
