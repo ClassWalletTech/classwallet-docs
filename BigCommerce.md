@@ -38,5 +38,3 @@
 |Metafields Access|Full|
 
 Click save and provide the credentials to ClassWallet 
-
-**Navigation Menu:** Un-check the box “Yes, show this web page on the navigation menu”. We do not want the page showing in the menu.
