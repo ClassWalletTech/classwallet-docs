@@ -9,10 +9,10 @@
 
 | Scope | Permission |
 | :---- | :----: |
-| Content | Modify|
+|Content| Modify|
 |Checkout Content| Modify|
 |Customers|Modify|
-|Customers Login|Token Login|
+|Customers Login|Login|
 |Information & Settings|Read-only|
 |Marketing|None|
 |Orders|Modify|
@@ -24,11 +24,11 @@
 |Themes|None
 |Carts|Modify|
 |Checkouts|Modify|
-|Sites & Routes|Modify|
-|Channel Settings|Modify|
-|Channel Listings|Modify|
-|Storefront API Tokens|Generate Tokens/Manage| 
-|Storefront API Customer impersonation tokens|Generate Tokens/Manage|
+|Sites & Routes|Read-only|
+|Channel Settings|Read-only|
+|Channel Listings|Read-only|
+|Storefront API Tokens|Manage| 
+|Storefront API Customer impersonation tokens|None|
 |Store Logs|None|
 |Store Locations|None|
 |Store Inventory|Read-only|
@@ -36,5 +36,6 @@
 |Order Fulfillment|None|
 |Metafields Ownership|Manage|
 |Metafields Access|Full|
+|Store Translations|None|
 
 Click save and provide the credentials to ClassWallet 
