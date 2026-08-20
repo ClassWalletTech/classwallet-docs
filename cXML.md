@@ -373,6 +373,7 @@ _**NOTE:** You will need to request to have this field enabled for your implemen
         <OrderRequest>
             <OrderRequestHeader orderID="12548349"
                 orderDate="2023-09-26T16:54:04.076Z" type="new">
+                <Extrinsic name="TaxExempt">true</Extrinsic>
                 <Total>
                     <Money currency="USD">2.94</Money>
                 </Total>
