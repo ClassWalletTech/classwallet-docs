@@ -445,6 +445,7 @@ Fernandez">vendorinvoices@classwallet.com</Email>
                     </Phone>
                 </Contact>
                 <Comments xml:lang="en-US" />
+				<Extrinsic name="TaxExempt">false</Extrinsic>
             </OrderRequestHeader>
             <ItemOut quantity="1" lineNumber="1">
                 <ItemID>
