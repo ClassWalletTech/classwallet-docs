@@ -169,7 +169,7 @@ _**NOTE:** You will need to request to have this field enabled for your implemen
 	</Header>
 	<Request>
 		<PunchOutSetupRequest operation="create">
-			<BuyerCookie>78b29b39191becce428538556b5e540b</BuyerCookie>
+			<BuyerCookie>cookie</BuyerCookie>
 			<Extrinsic name="UserEmail">youremail@yourdomain.com</Extrinsic>
 			<Extrinsic name="UniqueName">Dev Testing</Extrinsic>
 			<Extrinsic name="CostCenter">610</Extrinsic>
