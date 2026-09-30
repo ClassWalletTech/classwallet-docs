@@ -45,7 +45,7 @@ The Checkout URL is constructed using your Callback URL (listed below) and your 
 `https://app.classwallet.com/payby-checkout/?callback=<your_callback>&vendorId=<your_vendor_id>`
 
 **Example:**
-`https://app.classwallet.com/payby-checkout/?callback=https%3A%2F%2Fwww.store.com%2Fapi%2FCWOrder%2F0a4e569fd18e&vendorId=56b9fce8639d568e2535173d`
+`https://app.classwallet.com/payby-checkout/?callback=https%3A%2F%2Fwww.store.com%2Fapi%2FCWOrder%2F0a4e569fd18e&vendorId=<cw_vendor_id>`
 
 _**NOTE:** The callback parameter must be URL encoded_
 
