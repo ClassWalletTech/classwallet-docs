@@ -61,8 +61,8 @@ The Start URL is provided by you and needs to be communicated to ClassWallet to 
 Data is ‘application/x-www-form-urlencoded’ with one field named ‘request’ containing the JSON payload:
 ```
 {
-  "id": "55e4dfa966304b4d06b2bff3",
-  "authKey":"NWYwZDJiZDZkOWMxNTQyYzE1YmFmOTc5",
+  "id": "<user_id>",
+  "authKey":"<auth_key>",
   "taxExempt":true,
   "email": "somebody@example.com",
   "institution": "ABC Department of Education",
