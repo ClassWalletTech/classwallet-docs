@@ -133,64 +133,6 @@ orderDate="2023-09-26T16:54:04.076Z" type="new">
 ```
 It contains the order Id you will use to invoice ClassWallet.
 
-### Postman Script
-```
-{
-    "info": {
-        "_postman_id": "835ae776-3b40-4286-ae20-89215af408f3",
-        "name": "cXML Punchin",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-"_exporter_id": "19075874"
-    },
-    "item": [
-        {
-            "name": "https://yourdomain.com/api/punchin",
-            "request": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                    "mode": "raw",
-                    "raw": "<?xml version= \"1.0\"?>\n
-<!DOCTYPE cXML SYSTEM\"http://xml.cxml.org/schemas/cXML/1.2.014/cXML.dtd\">\n
-<cXMLxml:lang=\"en-US\" payloadID=\"465139514923\"timestamp=\"2002-08-15T08:36:47-07:00\">\n
-<Header>\n<From>\n<Credentialdomain=\"NetworkId\">\n<Identity>cxml-ren-dev</Identity>\n</Credential>\n</From>\n<To>\n<Credentialdomain=\"DUNS\">\n<Identity>cxml-ren-dev</Identity>
-    \n</Credential>\n</To>\n<Sender>\n<Credentialdomain=\"NetworkId\">\n<Identity>
-    cxml-ren-dev</Identity>\n<SharedSecret>********************</SharedSecret>\n</Credential>
-    \n<UserAgent>test-cxml-vendor</UserAgent>\n</Sender>
-    \n</Header>\n
-<Request>\n<PunchOutSetupRequestoperation=\"create\">\n<BuyerCookie>********************************</BuyerCookie>
-    \n<Extrinsicname=\"UserEmail\">youremail@yourdomain.com</Extrinsic>\n<Extrinsicname=\"UniqueName\">Rendahl Testing</Extrinsic>\n<Extrinsicname=\"CostCenter\">610</Extrinsic>
-    \n<BrowserFormPost>\n<URL>
-    https://app.classwallet.com/api/external/get_cart/650e020829a2ea34fc680fac</URL>\n</BrowserFormPost>
-    \n<SupplierSetup>\n<URL>https: //yourdomain.com/api/punchin</URL>\n</SupplierSetup>\n<ShipTo>\n<AddressaddressID=\"1000467\">\n<Name
-            xml:lang= \"en-US\">ClassWalletUniversity East</Name>\n<PostalAddress>\n<DeliverTo>
-    RendahlTesting</DeliverTo>\n<Street>6100 Hollywood Blvd Suite 409</Street>\n<City>Hollywood</City>
-    \n<State>FL</State>\n<PostalCode>33024</PostalCode>\n<Country isoCountryCode= \"US\">UnitedStates</Country>
-    \n</PostalAddress>\n<Phone>\n<TelephoneNumber>\n<CountryCodeisoCountryCode=\"US\">1</CountryCode>
-    \n<AreaOrCityCode>877</AreaOrCityCode>\n<Number>9695536</Number>\n</TelephoneNumber>\n</Phone>
-    \n</Address>\n</ShipTo>
-    \n</PunchOutSetupRequest>\n</Request>\n
-</cXML>"
-                },
-                "url": {
-                    "raw": "https://yourdomain.com/api/punchin",
-                    "protocol": "https",
-                    "host": [
-                        "yourdomain",
-                        "com"
-                    ],
-                    "path": [
-                        "api",
-                        "punchin"
-                    ]
-                }
-            },
-            "response": []
-        }
-    ]
-}
-```
-
 ### cXML Payloads
 
 **PunchOutSetupRequest**
