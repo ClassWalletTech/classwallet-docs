@@ -100,7 +100,17 @@ Many operations that the plugin makes leave a log entry trail for verification a
 general debugging. You can view these logs at:
 `WooCommerce -> Status -> Logs`
 ### Sample log output
-<img width="443" height="253" alt="image" src="https://github.com/user-attachments/assets/bb9e56ba-f1b4-4bb3-a33a-f936d9d07192" />\
+```
+2026-09-30T08:47:04+00:00 Debug start
+2026-09-30T08:47:04+00:00 Debug Logging in user automation_fourth@classwallet.testinator.com
+2026-09-30T08:47:21+00:00 Debug start
+2026-09-30T08:47:21+00:00 Debug Logging in user automation_fourth@classwallet.testinator.com
+2026-09-30T14:36:02+00:00 Debug start
+2026-09-30T14:36:02+00:00 Debug Logging in user rweishar@classwallet.com
+2026-09-30T14:36:23+00:00 Debug {"id":"<user_id>","email":"test@example.com","institution":"ClassWallet University East","username":"Rendahl Testing","shipping":{"address":"6100 Hollywood Blvd Suite 409","city":"Hollywood","state":"FL","zip":"33024"}}
+2026-09-30T14:36:23+00:00 Debug Processing payment for order 916 with method classwallet
+2026-09-30T14:36:23+00:00 Debug Redirect to ClassWallet: https://app.classwallet.dev/payby-checkout/?callback=https%3A%2F%2Fwoocw.com%2Fwp-json%2Fclasswallet%2Finvoice_process%2F916&vendorId=<vendor_id>
+```
 Enable Debugging mode, and attempt to replicate the error or behavior. Please provide the entire log dump for the day in question when contacting support if possible.
 
 All transactions need to be approved. We will notify your plugin when the sale is either “Approved” or “Canceled.” You can look at orders and see their status under the WooCommerce orders area. You can only ship or deliver when the payment transaction is
